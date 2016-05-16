@@ -1,0 +1,23 @@
+{
+	"name": "alsvanzelf/linkify",
+	"type": "library",
+	"description": "Finding and linkifying things that look like links.",
+	"keywords": ["link", "url", "linkify", "cross-language"],
+	"homepage": "https://github.com/lode/linkify",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Lode Claassen",
+			"email": "lode@alsvanzelf.nl",
+			"homepage": "http://www.lodeclaassen.nl/"
+		}
+	],
+	"require": {
+		"php": ">=5.3.4"
+	},
+	"autoload": {
+		"psr-4": {
+			"alsvanzelf\\linkify\\": "src/"
+		}
+	}
+}
