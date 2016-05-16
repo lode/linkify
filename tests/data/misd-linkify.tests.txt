@@ -1,0 +1,130 @@
+# https://github.com/misd-service-development/php-linkify
+# Copyright (c) 2012-2015 University of Cambridge
+
+# url
+
+www.example.com
+http://www.example.com/
+https://www.example.com/
+http://www.example.com
+www.example.com/
+www.example.com/example
+www.example.com/example/
+http://www.example.com/example
+http://www.example.com/example/
+(http://www.example.com/)
+http://www.example.com/)
+www.example.com/)
+website:http://www.example.com/example
+http://www.example.com/example-example/.
+http://www.example.com/example-example/-
+www.example.com/example?fdasfs=24fa3fd32
+www.example.com/example?fdasfs=24fa3fd32&asdsa=af5t34tw
+http://www.example.com/example?fdasfs=24fa3fd32
+http://www.example.com/example?fdasfs=24fa3fd32&asdsa=af5t34tw
+(www-example.example.example.com).
+http://www.example.com/example.aspx
+(www.example.com/example.php)
+.http://www.example.com
+/http://www.example.com
+"http://www.example.com"
+'http://www.example.com'
+"example.com/"
+http://mail.example.com/example/compose?to=example@example.com
+www.example.com/example_(example)
+http://www.example.com/example_(example)
+http://example.com/something?co,m,m,as,
+ftp://example.com
+example.com/
+example.com/example/example
+example.example.com/
+example.example.com/example/example
+example.com/example#example
+http://example.com/example#example
+www.example.com/example.pdf
+www-example.example.com.
+http://ex.am/pLE
+http://www.example.com/~example/example.html
+examplehttp://www.example.com
+examplewww.example.com/
+<p>www.example.com</p>
+<x>www.example.com</x>
+<pre/> www.example.com
+<pre /> www.example.com
+<pre></pre> www.example.com
+<pre ></pre> www.example.com
+<pre></ pre> www.example.com
+
+# email
+
+example@example.com
+example.a'ddress@example.com
+example+address@example.com
+exam-ple@example.com
+example@example.example.com
+example@exam-ple.example.com
+Lorem example@example.com ipsum.
+Lorem ipsum example@example.com dolor sit amet.
+example@example.com.
+example@example.com,
+example@example.example.com.
+(example@example.com)
+(example@example.example.com)
+(example@example.com),
+'example@example.com'
+'example@example.com
+example@example.com'
+(example@example.com).
+example@example.com).
+(example@example.com
+mailto:example@example.com
+(mailto:example@example.com)or
+Email:example@example.com
+<p>example@example.com</p>
+<p>Email example@example.com</p>
+<x>example@example.com</x>
+<pre/> example@example.com
+<pre /> example@example.com
+<pre></pre> example@example.com
+<pre ></pre> example@example.com
+<pre></ pre> example@example.com
+
+# ignore
+
+Lorem ipsum dolor sit amet.
+Lorem ipsum dolor.sit amet.
+Lorem ipsum dolor@sit amet
+Lorem ipsum 8.15am dolor 4.30pm.
+example(at)example.com
+Lorem@ipsum
+Lorem@ipsum.
+Lorem:ipsum
+Lorem/ipsum
+Lorem://ipsum
+Lorem://ipsum/dolor
+<head>www.example.com</head>
+<a href="http://www.example.com/">www.example.com</a>
+<a \n href="http://www.example.com/">www.example.com</a>
+<a href=" http://www.example.com/">www.example.com</a>
+<a href='http://www.example.com/'>www.example.com</a>
+<a href="mailto:example@example.com">example@example.com</a>
+<a href="http://www.example.com/" title="Link to www.example.com">www.example.com</a>
+<a href="http://www.example.com/">lorem <em>www.example.com</em> ipsum</a>
+<a href="mailto:example@example.com">lorem <em>example@example.com</em> ipsum</a>
+<script>document.write("www.example.com");</script>
+<script src="http://www.example.com/javascript.js"></script>
+<script src="//www.example.com/javascript.js"></script>
+<style>a[href="http://www.example.com/"]</style>
+<img src="http://www.example.com/image.png" alt="Image from www.example.com" />
+<code>www.example.com</code>
+<pre>www.example.com</pre>
+<!-- www.example.com -->
+<!--www.example.com-->
+<!-- Lorem www.example.com ipsum -->
+<!-- example@example.com -->
+<!--example@example.com-->
+<!-- Lorem example@example.com ipsum -->
+<!-- Lorem www.example.com ipsum\nexample@example.com -->
+<select><option>www.example.com</option></select>
+<textarea>www.example.com</textarea>
+<button>www.example.com</button>

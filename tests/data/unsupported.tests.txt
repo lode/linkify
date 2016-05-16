@@ -1,0 +1,45 @@
+# login
+
+http://userid:password@example.com:8080
+http://userid:password@example.com:8080/
+http://userid@example.com
+http://userid@example.com/
+http://userid@example.com:8080
+http://userid@example.com:8080/
+http://userid:password@example.com
+http://userid:password@example.com/
+
+# non http
+
+ftp://foo.bar/baz
+rdar://1234
+rdar:/1234
+x-yojimbo-item://6303E4C1-6A6E-45A6-AB9D-3A908F59AE0E
+message://%3c330e7f840905021726r6a4ba78dkf1fd71420c1bf6ff@mail.gmail.com%3e
+mailto:name@example.com
+
+# complex
+
+http://-.~_!$&'()*+,;=:%40:80%2f::::::@example.com
+
+# officially invalid
+
+http://../
+http://??/
+http://##
+http://##/
+http://-error-.invalid/
+http://a.b--c.de/
+http://-a.b.co
+http://a.b-.co
+http://0.0.0.0
+http://10.1.1.0
+http://10.1.1.255
+http://224.1.1.1
+http://1.1.1.1.1
+http://123.123.123
+http://3628126748
+http://10.1.1.1
+http://.www.foo.bar/
+http://www.foo.bar./
+http://.www.foo.bar./

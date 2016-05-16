@@ -1,0 +1,46 @@
+# working
+
+<a href="http://www.example.com">www.example.com</a>
+<a href="http://example.com">http://example.com</a>
+<a href="https://example.com">https://example.com</a>
+<a href="http://www.example.com">http://www.example.com</a>
+<a href="http://www.example.com">www.example.com</a>.
+<a href="http://www.example.com.www.example.com">www.example.com.www.example.com</a>
+<a href="http://www.example.com/foo">www.example.com/foo</a>?
+<a href="http://www.example.com/fo(o)">www.example.com/fo(o)</a>
+(<a href="http://www.example.com/foo">www.example.com/foo</a>)
+(<a href="http://www.example.com/fo(o)">www.example.com/fo(o)</a>)
+((<a href="http://www.example.com/foo">www.example.com/foo</a>))
+[<a href="http://www.example.com/foo">www.example.com/foo</a>]
+<a href="http://sub.example.com">http://sub.example.com</a>
+<a href="http://bare.com">http://bare.com</a>
+<a href="http://www.exäm-ple.com/?a%20b+c~d=e&f_g(h)i[j]k!l:m,o#p.q;r/s-t">www.exäm-ple.com/?a%20b+c~d=e&f_g(h)i[j]k!l:m,o#p.q;r/s-t</a>
+
+# known bugs
+
+(<a href="http://www.example.com/fo(o">www.example.com/fo(o</a>)
+{(<a href="http://www.example.com/foo">www.example.com/foo</a>)}
+<a href="https://medium.com/@WhiteHouse">https://medium.com/@WhiteHouse</a>
+<a href="https://medium.com/@WhiteHouse/our-top-picks-president-obamas-white-house-correspondents-dinner-jokes-2009-2015-8a045582c29d#.5tq6xsqbu">https://medium.com/@WhiteHouse/our-top-picks-president-obamas-white-house-correspondents-dinner-jokes-2009-2015-8a045582c29d#.5tq6xsqbu</a>
+
+# not working
+
+<a href="http://foowww.example.com">foowww.example.com</a>
+<a href="http://www2.example.com">www2.example.com</a>
+<a href="http://sub.example.com">sub.example.com</a>
+<a href="http://bare.com">bare.com</a>
+<a href="http://foo.bar">foo.bar</a>
+<a href="ftp://foo.bar/">ftp://foo.bar/</a>
+
+# bracket tests
+
+foo (<a href="http://bare.com">http://bare.com</a>) bar <a href="https://www.exämple.com/wi(ki)">https://www.exämple.com/wi(ki)</a>. baz
+foo [<a href="http://bare.com">http://bare.com</a>] bar <a href="https://www.exämple.com/wi[ki]">https://www.exämple.com/wi[ki]</a>. baz
+foo (<a href="http://bare.com">http://bare.com</a> bar <a href="https://www.exämple.com/wi(ki)">https://www.exämple.com/wi(ki)</a>) baz
+foo (<a href="http://bare.com">http://bare.com</a> bar <a href="https://www.exämple.com/wi()">https://www.exämple.com/wi()</a>) baz
+foo (<a href="https://www.exämple.com/wi(ki)">https://www.exämple.com/wi(ki)</a> bar <a href="http://bare.com">http://bare.com</a>) baz
+foo (<a href="https://www.exämple.com/wi()">https://www.exämple.com/wi()</a> bar <a href="http://bare.com">http://bare.com</a>) baz
+foo (<a href="https://www.exämple.com/wi(ki)">https://www.exämple.com/wi(ki)</a>) baz
+foo [<a href="https://www.exämple.com/wi(ki)">https://www.exämple.com/wi(ki)</a>] baz
+foo (<a href="https://www.exämple.com/wi[ki]">https://www.exämple.com/wi[ki]</a>) baz
+foo (<a href="https://www.exämple.com/wi(ki)">https://www.exämple.com/wi(ki)</a> baz

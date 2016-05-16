@@ -65,3 +65,14 @@ For example on adding more languages, or perfecting the cases catched.
 ## License
 
 [MIT](/LICENSE)
+
+
+## Thanks
+
+Thanks to inspiration from:
+
+- http://blog.codinghorror.com/the-problem-with-urls/
+- https://github.com/misd-service-development/php-linkify
+- http://daringfireball.net/2010/07/improved_regex_for_matching_urls
+- http://daringfireball.net/misc/2010/07/url-matching-regex-test-data.text
+- https://mathiasbynens.be/demo/url-regex

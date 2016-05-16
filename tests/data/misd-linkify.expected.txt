@@ -1,0 +1,130 @@
+# https://github.com/misd-service-development/php-linkify
+# Copyright (c) 2012-2015 University of Cambridge
+
+# url
+
+<a href="http://www.example.com">www.example.com</a>
+<a href="http://www.example.com/">http://www.example.com/</a>
+<a href="https://www.example.com/">https://www.example.com/</a>
+<a href="http://www.example.com">http://www.example.com</a>
+<a href="http://www.example.com/">www.example.com/</a>
+<a href="http://www.example.com/example">www.example.com/example</a>
+<a href="http://www.example.com/example/">www.example.com/example/</a>
+<a href="http://www.example.com/example">http://www.example.com/example</a>
+<a href="http://www.example.com/example/">http://www.example.com/example/</a>
+(<a href="http://www.example.com/">http://www.example.com/</a>)
+<a href="http://www.example.com/">http://www.example.com/</a>)
+<a href="http://www.example.com/">www.example.com/</a>)
+website:<a href="http://www.example.com/example">http://www.example.com/example</a>
+<a href="http://www.example.com/example-example/">http://www.example.com/example-example/</a>.
+<a href="http://www.example.com/example-example/">http://www.example.com/example-example/</a>-
+<a href="http://www.example.com/example?fdasfs=24fa3fd32">www.example.com/example?fdasfs=24fa3fd32</a>
+<a href="http://www.example.com/example?fdasfs=24fa3fd32&asdsa=af5t34tw">www.example.com/example?fdasfs=24fa3fd32&asdsa=af5t34tw</a>
+<a href="http://www.example.com/example?fdasfs=24fa3fd32">http://www.example.com/example?fdasfs=24fa3fd32</a>
+<a href="http://www.example.com/example?fdasfs=24fa3fd32&asdsa=af5t34tw">http://www.example.com/example?fdasfs=24fa3fd32&asdsa=af5t34tw</a>
+(<a href="http://www-example.example.example.com">www-example.example.example.com</a>).
+<a href="http://www.example.com/example.aspx">http://www.example.com/example.aspx</a>
+(<a href="http://www.example.com/example.php">www.example.com/example.php</a>)
+.<a href="http://www.example.com">http://www.example.com</a>
+/<a href="http://www.example.com">http://www.example.com</a>
+"<a href="http://www.example.com">http://www.example.com</a>"
+'<a href="http://www.example.com">http://www.example.com</a>'
+"<a href="http://example.com/">example.com/</a>"
+<a href="http://mail.example.com/example/compose?to=example@example.com">http://mail.example.com/example/compose?to=example@example.com</a>
+<a href="http://www.example.com/example_(example)">www.example.com/example_(example)</a>
+<a href="http://www.example.com/example_(example)">http://www.example.com/example_(example)</a>
+<a href="http://example.com/something?co,m,m,as">http://example.com/something?co,m,m,as</a>,
+<a href="ftp://example.com">ftp://example.com</a>
+<a href="http://example.com/">example.com/</a>
+<a href="http://example.com/example/example">example.com/example/example</a>
+<a href="http://example.example.com/">example.example.com/</a>
+<a href="http://example.example.com/example/example">example.example.com/example/example</a>
+<a href="http://example.com/example#example">example.com/example#example</a>
+<a href="http://example.com/example#example">http://example.com/example#example</a>
+<a href="http://www.example.com/example.pdf">www.example.com/example.pdf</a>
+<a href="http://www-example.example.com">www-example.example.com</a>.
+<a href="http://ex.am/pLE">http://ex.am/pLE</a>
+<a href="http://www.example.com/~example/example.html">http://www.example.com/~example/example.html</a>
+example<a href="http://www.example.com">http://www.example.com</a>
+<a href="http://examplewww.example.com/">examplewww.example.com/</a>
+<p><a href="http://www.example.com">www.example.com</a></p>
+<x><a href="http://www.example.com">www.example.com</a></x>
+<pre/> <a href="http://www.example.com">www.example.com</a>
+<pre /> <a href="http://www.example.com">www.example.com</a>
+<pre></pre> <a href="http://www.example.com">www.example.com</a>
+<pre ></pre> <a href="http://www.example.com">www.example.com</a>
+<pre></ pre> <a href="http://www.example.com">www.example.com</a>
+
+# email
+
+<a href="mailto:example@example.com">example@example.com</a>
+<a href="mailto:example.a'ddress@example.com">example.a'ddress@example.com</a>
+<a href="mailto:example+address@example.com">example+address@example.com</a>
+<a href="mailto:exam-ple@example.com">exam-ple@example.com</a>
+<a href="mailto:example@example.example.com">example@example.example.com</a>
+<a href="mailto:example@exam-ple.example.com">example@exam-ple.example.com</a>
+Lorem <a href="mailto:example@example.com">example@example.com</a> ipsum.
+Lorem ipsum <a href="mailto:example@example.com">example@example.com</a> dolor sit amet.
+<a href="mailto:example@example.com">example@example.com</a>.
+<a href="mailto:example@example.com">example@example.com</a>,
+<a href="mailto:example@example.example.com">example@example.example.com</a>.
+(<a href="mailto:example@example.com">example@example.com</a>)
+(<a href="mailto:example@example.example.com">example@example.example.com</a>)
+(<a href="mailto:example@example.com">example@example.com</a>),
+'<a href="mailto:example@example.com">example@example.com</a>'
+'<a href="mailto:example@example.com">example@example.com</a>
+<a href="mailto:example@example.com">example@example.com</a>'
+(<a href="mailto:example@example.com">example@example.com</a>).
+<a href="mailto:example@example.com">example@example.com</a>).
+(<a href="mailto:example@example.com">example@example.com</a>
+mailto:<a href="mailto:example@example.com">example@example.com</a>
+(mailto:<a href="mailto:example@example.com">example@example.com</a>)or
+Email:<a href="mailto:example@example.com">example@example.com</a>
+<p><a href="mailto:example@example.com">example@example.com</a></p>
+<p>Email <a href="mailto:example@example.com">example@example.com</a></p>
+<x><a href="mailto:example@example.com">example@example.com</a></x>
+<pre/> <a href="mailto:example@example.com">example@example.com</a>
+<pre /> <a href="mailto:example@example.com">example@example.com</a>
+<pre></pre> <a href="mailto:example@example.com">example@example.com</a>
+<pre ></pre> <a href="mailto:example@example.com">example@example.com</a>
+<pre></ pre> <a href="mailto:example@example.com">example@example.com</a>
+
+# ignore
+
+Lorem ipsum dolor sit amet.
+Lorem ipsum dolor.sit amet.
+Lorem ipsum dolor@sit amet
+Lorem ipsum 8.15am dolor 4.30pm.
+example(at)example.com
+Lorem@ipsum
+Lorem@ipsum.
+Lorem:ipsum
+Lorem/ipsum
+Lorem://ipsum
+Lorem://ipsum/dolor
+<head>www.example.com</head>
+<a href="http://www.example.com/">www.example.com</a>
+<a \n href="http://www.example.com/">www.example.com</a>
+<a href=" http://www.example.com/">www.example.com</a>
+<a href='http://www.example.com/'>www.example.com</a>
+<a href="mailto:example@example.com">example@example.com</a>
+<a href="http://www.example.com/" title="Link to www.example.com">www.example.com</a>
+<a href="http://www.example.com/">lorem <em>www.example.com</em> ipsum</a>
+<a href="mailto:example@example.com">lorem <em>example@example.com</em> ipsum</a>
+<script>document.write("www.example.com");</script>
+<script src="http://www.example.com/javascript.js"></script>
+<script src="//www.example.com/javascript.js"></script>
+<style>a[href="http://www.example.com/"]</style>
+<img src="http://www.example.com/image.png" alt="Image from www.example.com" />
+<code>www.example.com</code>
+<pre>www.example.com</pre>
+<!-- www.example.com -->
+<!--www.example.com-->
+<!-- Lorem www.example.com ipsum -->
+<!-- example@example.com -->
+<!--example@example.com-->
+<!-- Lorem example@example.com ipsum -->
+<!-- Lorem www.example.com ipsum\nexample@example.com -->
+<select><option>www.example.com</option></select>
+<textarea>www.example.com</textarea>
+<button>www.example.com</button>

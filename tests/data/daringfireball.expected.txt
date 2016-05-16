@@ -1,0 +1,51 @@
+# http://daringfireball.net/2010/07/improved_regex_for_matching_urls
+# license: public domain
+
+# Matches the right thing in the following lines
+
+<a href="http://foo.com/blah_blah">http://foo.com/blah_blah</a>
+<a href="http://foo.com/blah_blah/">http://foo.com/blah_blah/</a>
+(Something like <a href="http://foo.com/blah_blah">http://foo.com/blah_blah</a>)
+<a href="http://foo.com/blah_blah_(wikipedia)">http://foo.com/blah_blah_(wikipedia)</a>
+<a href="http://foo.com/more_(than)_one_(parens)">http://foo.com/more_(than)_one_(parens)</a>
+(Something like <a href="http://foo.com/blah_blah_(wikipedia)">http://foo.com/blah_blah_(wikipedia)</a>)
+<a href="http://foo.com/blah_(wikipedia)#cite-1">http://foo.com/blah_(wikipedia)#cite-1</a>
+<a href="http://foo.com/blah_(wikipedia)_blah#cite-1">http://foo.com/blah_(wikipedia)_blah#cite-1</a>
+<a href="http://foo.com/unicode_(✪)_in_parens">http://foo.com/unicode_(✪)_in_parens</a>
+<a href="http://foo.com/(something)?after=parens">http://foo.com/(something)?after=parens</a>
+<a href="http://foo.com/blah_blah">http://foo.com/blah_blah</a>.
+<a href="http://foo.com/blah_blah/">http://foo.com/blah_blah/</a>.
+<<a href="http://foo.com/blah_blah">http://foo.com/blah_blah</a>>
+<<a href="http://foo.com/blah_blah/">http://foo.com/blah_blah/</a>>
+<a href="http://foo.com/blah_blah">http://foo.com/blah_blah</a>,
+<a href="http://www.extinguishedscholar.com/wpglob/?p=364">http://www.extinguishedscholar.com/wpglob/?p=364</a>.
+<a href="http://✪df.ws/1234">http://✪df.ws/1234</a>
+<a href="rdar://1234">rdar://1234</a>
+<a href="rdar:/1234">rdar:/1234</a>
+<a href="x-yojimbo-item://6303E4C1-6A6E-45A6-AB9D-3A908F59AE0E">x-yojimbo-item://6303E4C1-6A6E-45A6-AB9D-3A908F59AE0E</a>
+<a href="message://%3c330e7f840905021726r6a4ba78dkf1fd71420c1bf6ff@mail.gmail.com%3e">message://%3c330e7f840905021726r6a4ba78dkf1fd71420c1bf6ff@mail.gmail.com%3e</a>
+<a href="http://➡.ws/䨹">http://➡.ws/䨹</a>
+<a href="http://www.c.ws/䨹">www.c.ws/䨹</a>
+<tag><a href="http://example.com">http://example.com</a></tag>
+Just a <a href="http://www.example.com">www.example.com</a> link.
+<a href="http://example.com/something?with,commas,in,url">http://example.com/something?with,commas,in,url</a>, but not at end
+What about <<a href="mailto:gruber@daringfireball.net?subject=TEST">mailto:gruber@daringfireball.net?subject=TEST</a>> (including brokets).
+<a href="mailto:name@example.com">mailto:name@example.com</a>
+<a href="http://bit.ly/foo">bit.ly/foo</a>
+“<a href="http://is.gd/foo/">is.gd/foo/</a>”
+<a href="http://WWW.EXAMPLE.COM">WWW.EXAMPLE.COM</a>
+<a href="http://www.asianewsphoto.com/(S(neugxif4twuizg551ywh3f55))/Web_ENG/View_DetailPhoto.aspx?PicId=752">http://www.asianewsphoto.com/(S(neugxif4twuizg551ywh3f55))/Web_ENG/View_DetailPhoto.aspx?PicId=752</a>
+<a href="http://www.asianewsphoto.com/(S(neugxif4twuizg551ywh3f55))">http://www.asianewsphoto.com/(S(neugxif4twuizg551ywh3f55))</a>
+<a href="http://lcweb2.loc.gov/cgi-bin/query/h?pp/horyd:@field(NUMBER+@band(thc+5a46634))">http://lcweb2.loc.gov/cgi-bin/query/h?pp/horyd:@field(NUMBER+@band(thc+5a46634))</a>
+	
+# Should fail against
+
+6:00p
+filename.txt
+
+# Known to fail against
+
+<a href="http://example.com/quotes-are-“part”">http://example.com/quotes-are-“part”</a>
+<a href="http://✪df.ws/1234">✪df.ws/1234</a>
+<a href="http://example.com">example.com</a>
+<a href="http://example.com/">example.com/</a>

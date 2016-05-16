@@ -1,0 +1,46 @@
+# working
+
+www.example.com
+http://example.com
+https://example.com
+http://www.example.com
+www.example.com.
+www.example.com.www.example.com
+www.example.com/foo?
+www.example.com/fo(o)
+(www.example.com/foo)
+(www.example.com/fo(o))
+((www.example.com/foo))
+[www.example.com/foo]
+http://sub.example.com
+http://bare.com
+www.exäm-ple.com/?a%20b+c~d=e&f_g(h)i[j]k!l:m,o#p.q;r/s-t
+
+# known bugs
+
+(www.example.com/fo(o)
+{(www.example.com/foo)}
+https://medium.com/@WhiteHouse
+https://medium.com/@WhiteHouse/our-top-picks-president-obamas-white-house-correspondents-dinner-jokes-2009-2015-8a045582c29d#.5tq6xsqbu
+
+# not working
+
+foowww.example.com
+www2.example.com
+sub.example.com
+bare.com
+foo.bar
+ftp://foo.bar/
+
+# brackets & inline
+
+foo (http://bare.com) bar https://www.exämple.com/wi(ki). baz
+foo [http://bare.com] bar https://www.exämple.com/wi[ki]. baz
+foo (http://bare.com bar https://www.exämple.com/wi(ki)) baz
+foo (http://bare.com bar https://www.exämple.com/wi()) baz
+foo (https://www.exämple.com/wi(ki) bar http://bare.com) baz
+foo (https://www.exämple.com/wi() bar http://bare.com) baz
+foo (https://www.exämple.com/wi(ki)) baz
+foo [https://www.exämple.com/wi(ki)] baz
+foo (https://www.exämple.com/wi[ki]) baz
+foo (https://www.exämple.com/wi(ki) baz
