@@ -16,13 +16,13 @@
 <a href="http://bare.com">http://bare.com</a>
 <a href="http://www.exäm-ple.com/?a%20b+c~d=e&f_g(h)i[j]k!l:m,o#p.q;r/s-t">www.exäm-ple.com/?a%20b+c~d=e&f_g(h)i[j]k!l:m,o#p.q;r/s-t</a>
 <tag><a href="http://example.com">http://example.com</a></tag>
+<a href="https://medium.com/@WhiteHouse">https://medium.com/@WhiteHouse</a>
+<a href="https://medium.com/@WhiteHouse/our-top-picks-president-obamas-white-house-correspondents-dinner-jokes-2009-2015-8a045582c29d#.5tq6xsqbu">https://medium.com/@WhiteHouse/our-top-picks-president-obamas-white-house-correspondents-dinner-jokes-2009-2015-8a045582c29d#.5tq6xsqbu</a>
 
 # known bugs
 
 (<a href="http://www.example.com/fo(o">www.example.com/fo(o</a>)
 {(<a href="http://www.example.com/foo">www.example.com/foo</a>)}
-<a href="https://medium.com/@WhiteHouse">https://medium.com/@WhiteHouse</a>
-<a href="https://medium.com/@WhiteHouse/our-top-picks-president-obamas-white-house-correspondents-dinner-jokes-2009-2015-8a045582c29d#.5tq6xsqbu">https://medium.com/@WhiteHouse/our-top-picks-president-obamas-white-house-correspondents-dinner-jokes-2009-2015-8a045582c29d#.5tq6xsqbu</a>
 
 # not working
 

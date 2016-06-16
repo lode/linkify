@@ -16,13 +16,13 @@ http://sub.example.com
 http://bare.com
 www.exäm-ple.com/?a%20b+c~d=e&f_g(h)i[j]k!l:m,o#p.q;r/s-t
 <tag>http://example.com</tag>
+https://medium.com/@WhiteHouse
+https://medium.com/@WhiteHouse/our-top-picks-president-obamas-white-house-correspondents-dinner-jokes-2009-2015-8a045582c29d#.5tq6xsqbu
 
 # known bugs
 
 (www.example.com/fo(o)
 {(www.example.com/foo)}
-https://medium.com/@WhiteHouse
-https://medium.com/@WhiteHouse/our-top-picks-president-obamas-white-house-correspondents-dinner-jokes-2009-2015-8a045582c29d#.5tq6xsqbu
 
 # not working
 
