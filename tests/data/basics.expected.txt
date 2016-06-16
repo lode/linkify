@@ -15,6 +15,7 @@
 <a href="http://sub.example.com">http://sub.example.com</a>
 <a href="http://bare.com">http://bare.com</a>
 <a href="http://www.exäm-ple.com/?a%20b+c~d=e&f_g(h)i[j]k!l:m,o#p.q;r/s-t">www.exäm-ple.com/?a%20b+c~d=e&f_g(h)i[j]k!l:m,o#p.q;r/s-t</a>
+<tag><a href="http://example.com">http://example.com</a></tag>
 
 # known bugs
 

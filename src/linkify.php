@@ -69,14 +69,14 @@ private function prepare_matchers() {
 	 * determine what punctuation can be used directly after a url
 	 * if one of these characters ends the url, it is kept outside the anchor
 	 */
-	$regex_punctuation = '\.?!:,;\)\]';
+	$regex_punctuation = '\.?!:,;\)\]\<';
 	
 	/**
 	 * main regex, comments are inline
 	 */
 	$regex = '{
 		# before the url should be: start of string; whitespace; or opening bracket ($1)
-		(^|[\(\[\s]+)
+		(^|[\(\[\>\s]+)
 		
 		# actual full url ($2)
 		(

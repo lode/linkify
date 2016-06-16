@@ -15,6 +15,7 @@ www.example.com/fo(o)
 http://sub.example.com
 http://bare.com
 www.exäm-ple.com/?a%20b+c~d=e&f_g(h)i[j]k!l:m,o#p.q;r/s-t
+<tag>http://example.com</tag>
 
 # known bugs
 
