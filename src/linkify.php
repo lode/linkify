@@ -96,8 +96,8 @@ private function prepare_matchers() {
 				# it might start with www. if we started with http(s)://
 				(www\.)?
 				
-				# allowed characters: alphanum (unicode), path, query string, hash and some others
-				[-\p{L}0-9\./?=&#%+~_@()\[\]!:,.;]+
+				# allowed characters: alphanum (unicode Letter & Number), path, query string, hash and some others (incl. unicode Punctuation)
+				[-\p{L}\p{N}\p{P}0-9\./?=&#%+~_@()\[\]!:,.;]+
 				
 				# url should not end with whitespace or punctuation
 				# this way we can separate that from the anchor
